@@ -6,12 +6,15 @@
     <title>Admin</title>
     <style>
         body { font-family: Arial, sans-serif; }
-        .container { display: flex; flex-direction: column; align-items: center; }
+        .container { display: flex; }
+        .map { width: 50%; }
+        .table { width: 50%; }
         .actions { margin-top: 10px; }
+        form { margin-bottom: 20px; }
     </style>
 </head>
 <body>
-    <h1>Gestione Posti</h1>
+    <h1>Benvenuti</h1>
     <form>
         <label for="username">Username:</label>
         <input type="text" id="username" name="username">
@@ -20,21 +23,26 @@
         <button type="submit">Login</button>
     </form>
     <div class="container">
-        <h2>Posti sulla mappa</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Descrizione</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-        <div class="actions">
-            <button>Aggiungi</button>
-            <button>Rimuovi</button>
-            <button>Modifica</button>
+        <div class="map">
+            <h2>Mappa</h2>
+        </div>
+        <div class="table">
+            <h2>Posti sulla mappa</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Descrizione</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div class="actions">
+                <button>Aggiungi</button>
+                <button>Rimuovi</button>
+                <button>Modifica</button>
+            </div>
         </div>
     </div>
 </body>
