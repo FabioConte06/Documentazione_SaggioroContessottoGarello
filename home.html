@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradiente di sfondo */
+            background: linear-gradient(to right, #6a11cb, #2575fc);
             color: #fff;
             padding: 20px;
         }
@@ -28,7 +28,7 @@
         }
 
         .map, .table {
-            background: rgba(0, 0, 0, 0.5); /* Sfondo trasparente scuro */
+            background: rgba(0, 0, 0, 0.5); 
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -67,6 +67,22 @@
         .table td {
             background-color: rgba(255, 255, 255, 0.2);
         }
+        .admin-link {
+            position: fixed;
+            top: 20px; 
+            right: 20px; 
+            font-size: 1rem;
+            text-decoration: none;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .admin-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
 
         /* Ottimizzazione per dispositivi mobili */
         @media (max-width: 768px) {
@@ -81,6 +97,8 @@
     </style>
 </head>
 <body>
+
+    <a href="admin.html" class="admin-link">Admin</a>
 
     <h1>Benvenuti</h1>
 
